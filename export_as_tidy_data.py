@@ -48,5 +48,5 @@ with open("data.csv", "w", newline='') as f:
                                  '提交时间': commit_time,
                                  '是否批改': comment,
                                  '批改结果': result,
-                                 '批改时间': commit_time,
+                                 '批改时间': comment_time,
                                  '批改人QQ': comment_uin})
