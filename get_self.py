@@ -28,10 +28,10 @@ for i in range(1, 9999):
     }, verify=False)
     r = r.json()
     print(r)
-    for entry in r['data']['homework']:
-        all_homework.append(entry)
     if r['data']['end_flag'] == 1:
         break
+    for entry in r['data']['homework']:
+        all_homework.append(entry)
 
 print("total: " + str(len(all_homework)))
 print(all_homework)
